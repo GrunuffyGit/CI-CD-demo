@@ -5,8 +5,11 @@
   "homepage": "http://revealjs.com",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
+  "eslintConfig": {
+    "plugins": ["html"]
+  },
   "scripts": {
-    "test": "grunt test",
+    "test": "eslint index.html",
     "start": "grunt serve",
     "build": "grunt"
   },
